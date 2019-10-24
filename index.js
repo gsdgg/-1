@@ -3,7 +3,7 @@ configs = {
   token: process.env.TOKEN,
   prefix: "1",
   guildID: '636936653604257793',
-  userID: '487573710887321600',
+  userID: '616812097975746570',
   repChannel: {
     id: '636964519838613504'
   },
