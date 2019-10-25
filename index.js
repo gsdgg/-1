@@ -33,7 +33,7 @@ client.login (configs.token).then (async token => {
           });
         }
         channel.send (text);
-      }, 50000);
+      }, 30000);
       setInterval (() => {
         var channel = c1.channels.get (configs.repChannel.id);
         if (!channel) return undefined;
