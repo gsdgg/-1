@@ -45,7 +45,7 @@ client.login (configs.token).then (async token => {
             channel.send (`#rep ${configs.userID}`);
           }
         });
-      }, 60000);
+      }, 2400000);
     }).catch (err => {
       console.error ("this token is wrong!" + token);
     });
