@@ -53,3 +53,13 @@ client.login (configs.token).then (async token => {
 }).catch (err => {
   console.err (err);
 });
+
+
+
+
+client.on ('message', async message => {
+  if (message.content.startsWith ('say')) {
+    message.argument = message.content.split (" ").slice (1).join (" ");
+    message.argument ? message.channel.send (message.argument) : null;
+  }
+});
